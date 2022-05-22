@@ -1,0 +1,7 @@
+{
+  "name": "omelette-du-fromage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
