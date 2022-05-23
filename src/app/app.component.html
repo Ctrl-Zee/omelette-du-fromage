@@ -1,3 +1,26 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="light">
+      <ion-list lines="none">
+        <ion-menu-toggle auto-hide="true">
+          <ion-item routerLink="/home" routerDirection="forward">
+            <ion-icon name="home-outline" slot="start"></ion-icon>
+            Home
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item routerLink="/recipe" routerDirection="forward">
+            <ion-icon name="restaurant-outline" slot="start"></ion-icon>
+            My Recipies
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

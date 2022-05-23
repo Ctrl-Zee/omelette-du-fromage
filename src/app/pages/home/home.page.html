@@ -1,40 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Omelette Du Fromage </ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" size="small">
+      Omelette Du Fromage
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Omelette</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center" size="large">Omelette</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <div class="button-container">
-      <ion-button expand="block" size="large">
-        Add Recipe
-        <ion-icon slot="end" name="add-circle-outline" size="large"></ion-icon>
-      </ion-button>
-    </div>
-    <div class="button-container">
-      <ion-button expand="block" size="large">
-        My Recipies
-        <ion-icon slot="end" name="restaurant-outline"></ion-icon>
-      </ion-button>
-    </div>
-    <div class="button-container">
-      <ion-button expand="block" size="large">
-        Search
-        <ion-icon slot="end" name="search-outline"></ion-icon>
-      </ion-button>
-    </div>
-    <div class="button-container">
-      <ion-button expand="block" size="large">
-        Favorite Recipies
-        <ion-icon slot="end" name="heart-outline"></ion-icon>
-      </ion-button>
-    </div>
+    <ion-button
+      class="ion-margin"
+      expand="block"
+      size="large"
+      routerLink="/recipe"
+    >
+      Add Recipe
+      <ion-icon slot="end" name="add-circle-outline" size="large"></ion-icon>
+    </ion-button>
+    <ion-button class="ion-margin" expand="block" size="large">
+      My Recipies
+      <ion-icon slot="end" name="restaurant-outline"></ion-icon>
+    </ion-button>
+    <ion-button class="ion-margin" expand="block" size="large">
+      Search
+      <ion-icon slot="end" name="search-outline"></ion-icon>
+    </ion-button>
+    <ion-button class="ion-margin" expand="block" size="large">
+      Favorite Recipies
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
+    </ion-button>
   </div>
 </ion-content>
